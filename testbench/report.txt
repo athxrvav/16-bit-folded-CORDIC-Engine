@@ -1,0 +1,63 @@
+run all
+
+==================================================
+   STARTING VIVADO CORDIC VERIFICATION ENGINE     
+==================================================
+
+--------------------------------------------------
+Test:                                                               0 Degrees (Center)
+Input HEX: 16'h0000
+Sine   : -1 	| Expected: ~0
+Cosine : -128 	| Expected: ~-128
+--------------------------------------------------
+Test:                                                                      +10 Degrees
+Input HEX: 16'h1657
+Sine   : 22 	| Expected: ~22
+Cosine : 126 	| Expected: ~126
+--------------------------------------------------
+Test:                                                                      +20 Degrees
+Input HEX: 16'h2cb6
+Sine   : 43 	| Expected: ~44
+Cosine : 120 	| Expected: ~120
+--------------------------------------------------
+Test:                                                                      +30 Degrees
+Input HEX: 16'h4305
+Sine   : 63 	| Expected: ~64
+Cosine : 110 	| Expected: ~111
+--------------------------------------------------
+Test:                                                                      +45 Degrees
+Input HEX: 16'h6487
+Sine   : 90 	| Expected: ~90
+Cosine : 90 	| Expected: ~90
+--------------------------------------------------
+Test:                                                  +55 Degrees (Upper Bound limit)
+Input HEX: 16'h7add
+Sine   : 104 	| Expected: ~105
+Cosine : 73 	| Expected: ~73
+--------------------------------------------------
+Test:                                                                      -10 Degrees
+Input HEX: 16'he9a9
+Sine   : -23 	| Expected: ~-22
+Cosine : 126 	| Expected: ~126
+--------------------------------------------------
+Test:                                                                      -20 Degrees
+Input HEX: 16'hd352
+Sine   : -44 	| Expected: ~-44
+Cosine : 120 	| Expected: ~120
+--------------------------------------------------
+Test:                                                                      -30 Degrees
+Input HEX: 16'hbcfb
+Sine   : -64 	| Expected: ~-64
+Cosine : 110 	| Expected: ~111
+--------------------------------------------------
+Test:                                                                      -45 Degrees
+Input HEX: 16'h9b78
+Sine   : -91 	| Expected: ~-90
+Cosine : 90 	| Expected: ~90
+--------------------------------------------------
+
+==================================================
+               SIMULATION COMPLETE                  
+==================================================
+
+$finish called at time : 36900 ns
